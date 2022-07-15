@@ -1,0 +1,88 @@
+.work{
+    width: 100%;
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+    margin-top: 50px;
+    background-image: url('/Landing_page_1/assets/images/Sea.png');
+    background-size: 100% 100%;
+    padding: 25px 0;
+    .work_title{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px; 
+        h1{
+            span{
+                font-size: 30px;
+                color: $text-main;
+            }
+        }
+    }
+    .work_content{
+        @include flex(center,space-between);
+        
+        .work_content_box{
+            position: relative;
+            width: 320px;
+            height: 350px;
+            background-color: $main-bg;
+            border-radius: 10px;
+            box-shadow: $box-shadow;
+            text-align: center;
+            padding: 10px 40px;
+            &-image{
+                width: 100%;
+                height: 160px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &-details{
+                margin-top: 20px;
+            }
+            &-link{
+                
+                position: absolute;
+                right: 15%;
+                bottom: 5%;
+                a{
+                    @include flex(center,center);
+                    color: $text-main;
+                    i{
+                        font-size: 20px;
+                        color: $text-main;
+                    }
+                }
+            }
+        }
+
+        @include tablet{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .work_content_box{
+                margin: 10px 0;
+                &-details{
+                    h3{
+                        margin-bottom: 5px;
+                    }
+                }
+                &-link{
+                    bottom: 8%;
+                }
+            }
+        }
+        @include mobile{
+            display: grid;
+            grid-template-columns: 1fr;
+            .work_content_box{
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    }
+
+    @include tablet{
+        height: auto;
+    }
+}

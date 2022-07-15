@@ -1,0 +1,58 @@
+.slide_carousel{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+
+    .owl-carousel{
+        width: 100%;
+        height: 100%;
+        .item{
+            position: relative;
+            overflow: hidden;
+            color: $text-white;
+            height: 350px;
+            .item-image{
+                width: 100%;
+                height: 100%;
+            }
+            .item-title{
+                position: absolute;
+                width: 100%;
+                height: 70px;
+                bottom: 0;
+                background-color: $text-four-color;
+                z-index: 3;
+                @include flex(center,center);
+                .title-icon{
+                    width: 40px;
+                    height: 32px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                h2{
+                    padding: 0 15px;
+                }
+                i{
+                    font-size: 1.8rem;
+                    transform: rotate(180deg);
+                    transition: transform 0.5s ease;
+                }
+                
+            }
+            
+
+        }
+        .item:hover{
+            cursor: pointer;;
+        }
+
+    }
+    .owl-stage {
+        transition: 0.8s !important;
+    }
+        
+
+}
