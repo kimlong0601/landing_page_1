@@ -1,0 +1,85 @@
+.vacation{
+    width: 100%;
+    background-color: #EDEDED;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    margin-top: 60px;
+    .vacation_title{
+        margin-top: 35px;
+        width: 100%;
+        text-align: center;
+        h1{
+            font-size: 30px;
+            color: $text-main;
+        }
+        p{
+            color: $text-main;
+            font-family: 'Smooch', cursive;
+            font-size: 26px;
+            margin: 10px 0;
+        }
+    }
+    .vacation_content{
+        width: 100%;
+        height: 600px;
+        @include flex(center,center);
+        .vacation_content-image{
+            width: 500px;
+            height: 500px;
+            padding: 10px;
+            border: 1px solid black;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .vacation_content-details{
+            width: 500px;
+            margin-left: 50px;
+            h3{
+                margin: 25px 0;
+            }
+            p{
+                margin: 25px 0;
+            }
+            a{
+                color: $text-main;
+                display: flex;
+                transition: 0.4s ease;
+                margin: 25px 0;
+                i{
+                    font-size: 20px;
+                    transition: 0.3s ease;
+                }
+            }
+            a:hover{
+                transition: 0.3s ease;
+                font-weight: 500;
+                i{
+                    font-size: 22px;
+                    font-weight: 500;
+                    transition: 0.3s ease;
+                }
+            }
+        }
+
+
+        @include tablet{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            height: auto;
+            .vacation_title{
+                width: 100%;
+            }
+            .vacation_content-image{
+                width: 100%;
+            }
+            .vacation_content-details{
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+}

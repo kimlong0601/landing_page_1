@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -260,7 +261,9 @@ header .header-container .menu_sign li:hover i {
   justify-content: center;
 }
 .hero_banner .banner_title div p {
-  width: 400px;
+  width: 450px;
+  font-family: "Smooch", sans-serif;
+  font-size: 26px;
 }
 .hero_banner .banner_title div .crossline {
   width: 100%;
@@ -539,9 +542,9 @@ header .header-container .menu_sign li:hover i {
   text-align: center;
   margin-bottom: 30px;
 }
-.work .work_title h1 span {
-  font-size: 30px;
+.work .work_title h1 {
   color: #28414F;
+  font-size: 30px;
 }
 .work .work_content {
   display: flex;
@@ -627,7 +630,7 @@ header .header-container .menu_sign li:hover i {
   text-align: center;
   margin: 10px 0;
 }
-.service .service_title h1 span {
+.service .service_title h1 {
   color: #28414F;
   font-size: 30px;
 }
@@ -739,6 +742,16 @@ header .header-container .menu_sign li:hover i {
   text-align: center;
   margin: 25px 0;
 }
+.best_position .position_title h1 {
+  color: #28414F;
+  font-size: 30px;
+}
+.best_position .position_title p {
+  font-family: "Smooch", cursive;
+  font-size: 26px;
+  margin: 10px 0;
+  color: #28414F;
+}
 .best_position .position_content {
   display: flex;
   align-items: center;
@@ -801,5 +814,246 @@ header .header-container .menu_sign li:hover i {
   .best_position .position_content .position_content_box {
     margin: 30px 0;
     width: 100%;
+  }
+}
+
+.logo_brand {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  margin-top: 70px;
+}
+.logo_brand .logo_title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.logo_brand .logo_title h1 {
+  color: #28414F;
+  font-size: 30px;
+}
+.logo_brand .owl-two .item {
+  width: 100%;
+  height: 300px;
+}
+.logo_brand .owl-two .item .item-image {
+  width: 200px;
+  height: 140px;
+}
+.logo_brand .owl-two .item .item-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.vacation {
+  width: 100%;
+  background-color: #EDEDED;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  margin-top: 60px;
+}
+.vacation .vacation_title {
+  margin-top: 35px;
+  width: 100%;
+  text-align: center;
+}
+.vacation .vacation_title h1 {
+  font-size: 30px;
+  color: #28414F;
+}
+.vacation .vacation_title p {
+  color: #28414F;
+  font-family: "Smooch", cursive;
+  font-size: 26px;
+  margin: 10px 0;
+}
+.vacation .vacation_content {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vacation .vacation_content .vacation_content-image {
+  width: 500px;
+  height: 500px;
+  padding: 10px;
+  border: 1px solid black;
+}
+.vacation .vacation_content .vacation_content-image img {
+  width: 100%;
+  height: 100%;
+}
+.vacation .vacation_content .vacation_content-details {
+  width: 500px;
+  margin-left: 50px;
+}
+.vacation .vacation_content .vacation_content-details h3 {
+  margin: 25px 0;
+}
+.vacation .vacation_content .vacation_content-details p {
+  margin: 25px 0;
+}
+.vacation .vacation_content .vacation_content-details a {
+  color: #28414F;
+  display: flex;
+  transition: 0.4s ease;
+  margin: 25px 0;
+}
+.vacation .vacation_content .vacation_content-details a i {
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+.vacation .vacation_content .vacation_content-details a:hover {
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+.vacation .vacation_content .vacation_content-details a:hover i {
+  font-size: 22px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+@media only screen and (max-width: 1023px) {
+  .vacation .vacation_content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+  }
+  .vacation .vacation_content .vacation_title {
+    width: 100%;
+  }
+  .vacation .vacation_content .vacation_content-image {
+    width: 100%;
+  }
+  .vacation .vacation_content .vacation_content-details {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+footer {
+  position: relative;
+  height: 350px;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  margin-top: 150px;
+  margin-bottom: 0;
+}
+footer .footer_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer_menu .footer_menu_links {
+  height: 200px;
+}
+footer .footer_menu .footer_menu_links .image {
+  width: 100%;
+  height: 70px;
+}
+footer .footer_menu .footer_menu_links .image img {
+  width: 100%;
+  height: 100%;
+}
+footer .footer_menu .footer_menu_links .icon {
+  margin: 30px 0;
+}
+footer .footer_menu .footer_menu_links .icon i {
+  margin: 0 5px;
+  font-size: 26px;
+  color: #85B6FF;
+  transition: 0.4s ease;
+}
+footer .footer_menu .footer_menu_links .icon i:hover {
+  font-weight: 900;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+footer .footer_menu .footer_menu_links .title {
+  margin: 20px 0;
+}
+footer .footer_menu .footer_menu_links .link {
+  color: #808080;
+  margin: 10px 0;
+}
+footer .footer_menu .footer_menu_links .link:hover {
+  font-weight: 700;
+  color: #85B6FF;
+}
+@media only screen and (max-width: 1023px) {
+  footer .footer_menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  footer .footer_menu .image {
+    padding-right: 100px;
+  }
+  footer .footer_menu .image img {
+    width: 50%;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  footer .footer_menu {
+    grid-template-columns: 1fr;
+  }
+  footer .footer_menu .image img {
+    width: 50%;
+    height: 100%;
+  }
+}
+footer .footer_bottom {
+  position: absolute;
+  width: 90%;
+  bottom: 2%;
+  left: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-top: 1px solid #808080;
+}
+footer .footer_bottom .footer_bottom-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #808080;
+}
+footer .footer_bottom .footer_bottom-text .line {
+  width: 1px;
+  height: 15px;
+  margin: 0 10px;
+  background-color: #808080;
+}
+footer .footer_bottom .footer_bottom-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer_bottom .footer_bottom-icon i {
+  margin: 0 5px;
+  font-size: 2.5rem;
+  color: #85B6FF;
+}
+footer .footer_bottom .footer_bottom-icon i:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
+@media only screen and (max-width: 1023px) {
+  footer .footer_bottom {
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  footer {
+    height: auto;
   }
 }/*# sourceMappingURL=index.css.map */
