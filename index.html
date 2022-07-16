@@ -32,19 +32,19 @@
                         </div>
                         <ul class="menu">
                             <li class="menu-item">
-                                <a href="#" class="menu-link">Home</a>
+                                <a data-link="hero-banner" class="menu-link">Home</a>
                             </li>
                             <div class="line"></div>
                             <li class="menu-item">
-                                <a href="#" class="menu-link">About</a>
+                                <a data-link="about" class="menu-link">About</a>
                             </li>
                             <div class="line"></div>
                             <li class="menu-item">
-                                <a href="#" class="menu-link">Service</a>
+                                <a data-link="service" class="menu-link">Service</a>
                             </li>
                             <div class="line"></div>
                             <li class="menu-item">
-                                <a href="#" class="menu-link">Blog</a>
+                                <a data-link="location" class="menu-link">Best Location</a>
                             </li>
                             <div class="menu_close">
                                 <i class='bx bx-x' ></i>
@@ -58,12 +58,13 @@
                 </div>
             </header>
 
+            <button id="scrollTop_btn" onclick="Topfunction()"><i class='bx bx-up-arrow-alt'></i></button>
 
-            <div class="hero_banner">
+            <div id="hero-banner" class="hero_banner">
                 <div class="container">
                     <div class="banner">
                         <div class="banner_title">
-                            <h1>LIFE ON BOAT IS MORE COMFORTABLE THAN HOME</h1>
+                            <h1 >LIFE ON BOAT IS MORE COMFORTABLE THAN HOME</h1>
                             <div><p>Experience Your Next Idea</p> <div class="crossline"></div></div>
                         </div>
                         <div class="banner_contact">
@@ -136,12 +137,12 @@
 
 
             
-            <div class="about">
+            <div id="about" class="about">
                 <div class="container">
                     <div class="about_box">
                         <div class="box_content">
                             <div class="content-title">
-                                <h1>TEKNENDE</h1>
+                                <h1 >TEKNENDE</h1>
                                 <h1><span>
                                     Life</span></h1>
                             </div>
@@ -225,7 +226,7 @@
 
             <div class="service">
                 <div class="container">
-                    <div class="service_title">
+                    <div  id="service"class="service_title">
                         <h1>Most Popular Services</h1>
                     </div>
                     <div class="services">
@@ -336,7 +337,7 @@
             <div class="best_position">
                 <div class="container">
                     <div class="position_title">
-                        <h1>Most Popular Locations</h1>
+                        <h1 id="location">Most Popular Locations</h1>
                         <p>Discover the most popular marinas</p>
                     </div>
                     <div class="position_content">

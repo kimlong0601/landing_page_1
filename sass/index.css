@@ -10,6 +10,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -53,6 +54,32 @@ input, button {
   .container {
     padding: 0 10px;
   }
+}
+
+#scrollTop_btn {
+  width: 50px;
+  height: 50px;
+  background-color: #28414F;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 1000;
+  outline: none;
+  font-size: 30px;
+  font-weight: 900;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  transition: transform 0.5s ease;
+}
+
+#scrollTop_btn:hover {
+  opacity: 1;
+  cursor: pointer;
+  transform: translateY(-10%);
+  transition: transform 0.5s ease;
 }
 
 header {
@@ -454,7 +481,7 @@ header .header-container .menu_sign li:hover i {
   position: relative;
   overflow: hidden;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .about .about_box {
   display: flex;
@@ -530,9 +557,9 @@ header .header-container .menu_sign li:hover i {
 .work {
   width: 100%;
   position: relative;
-  height: 70vh;
+  height: auto;
   overflow: hidden;
-  margin-top: 50px;
+  margin-top: 70px;
   background-image: url("/Landing_page_1/assets/images/Sea.png");
   background-size: 100% 100%;
   padding: 25px 0;
@@ -623,7 +650,7 @@ header .header-container .menu_sign li:hover i {
   position: relative;
   overflow: hidden;
   height: auto;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 .service .service_title {
   width: 100%;

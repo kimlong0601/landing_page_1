@@ -25,5 +25,29 @@ dropdown.onclick = function(){
 
 
 
-//carousel-button
+//scroll to elements
+const links = document.querySelectorAll('.menu-link');
+links.forEach((item) =>{
+    item.addEventListener("click", () => {
+        let el = document.getElementById(item.getAttribute("data-link"));
+        el.scrollIntoView({behavior:"smooth",block: "start"});
+    })
+})
 
+
+//scroll top button
+var Button  = document.getElementById('scrollTop_btn');
+window.onscroll = function() {scrollFunction()};
+//display button
+function scrollFunction(){
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+        Button.style.display = "block";
+    }else{
+        Button.style.display = "none";
+    }
+}
+//scroll top
+function Topfunction(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}

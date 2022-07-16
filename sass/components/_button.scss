@@ -1,0 +1,22 @@
+#scrollTop_btn{
+    width: 50px;
+    height: 50px;
+    background-color: $text-main;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 1000;
+    outline: none;
+    font-size: 30px;
+    font-weight: 900;
+    border-radius: 50%;
+    @include flex(center,center);
+    opacity: 0.5;
+    transition: transform 0.5s ease;
+}
+#scrollTop_btn:hover{
+    opacity: 1;
+    cursor: pointer;
+    transform: translateY(-10%);
+    transition: transform 0.5s ease;
+}
